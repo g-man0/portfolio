@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ML for Travel Time Prediction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">CiSTUP</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic-work.html">Work Experience</a></li>
+							<li><a href="generic-education.html">Education</a></li>
+							<li><a href="generic-projects.html">Projects</a></li>
+						</ul>
+						<a href="#" class="close">Close</a>
+					</div>
+				</nav>
+
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Travel time prediction using a Machine Learning Model</h2>
+								<p>Programmed a Supervised Machine Learning Algorithm for travel time prediction from Real-Time GPS data of cars running in Electronic City, Bangalore.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<section>
+										<h3 class="major">Problem</h3>
+										<p> My work with <a href="elements-vissim.html">VISSIM</i></a> involved optimization to match the simulation conditions to real-world condition. One measure that is used to verify simulation accuracy is the travel-time on links within the network. It is thus necessary to infer the travel time on the links in the network. To do so, we had access to 29 vehicles' GPS data in real-time. </p>
+									</section>
+
+									<section>
+										<h3>Road Network with Links and Nodes marked:</h3>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-6"><span class="image center"><img src="images/cistup/Links.png" alt="" /></span></div>
+											</div>
+										</div>
+										<h3 class="major">Work</h3>
+										<p>The GPS data from 29 vehicles in Electronic City was extracted and I wrote a map-matching algorithm to map-match the extracted data to Electronic City Open Street Map (OSM) network. This was programmed in Python using the OSMnx library. This is how for each trip, the links traversed and the travel-time is found.</p>
+
+										<p> Based on the information of each link, which is extracted from OSM network which is an open-source alternative to Google Maps, a machine learning model was built to determine the travel time for trips within Electronic City. The link speed for different categories of links within the network was estimated and was used to predict travel times for future trips for different time intervals.</p>
+
+										<h3>Link Categories in the network:</h3>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-2"><span class="image fit"></span></div>
+												<div class="col-8"><span class="image fit"><img src="images/cistup/Roads.png" alt="" /></span></div>
+												<div class="col-2"><span class="image fit"></span></div>
+											</div>
+										</div>
+
+										<p>Time of travel and link category plays a crucial role in determining the travel time along with the link length, so these were accounted for when building the ML model. After careful outlier rejection to account for stops not due to traffic, achieved a final model with an R2 score of <strong>0.88</strong>.</p>
+									</section>
+
+								</div>
+							</div>
+						
+							<div class="wrapper">
+								<div class="inner">
+
+									<section>
+										<h2 class="major">Transit Ridership Analysis and Setting up Exogenous Variables </h2>
+										<p> Additionally, worked on database management and data acquisition with the Bengaluru Metro Transport Corporation to setup Exogenous Variables to produce Transit Ridership Prediction Models to improve the public bus system of Bengaluru City. Work invloved analysis of survey data from around 1500 employees in Electronic City to analyze and find optimum bus routes and timings.</p>
+									</section>
+
+									<section>
+										<h3>Images:</h3>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/cistup/TBA_flowchart.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/cistup/All_Morn_trips.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/cistup/All_Even_trips.png" alt="" /></span></div>
+											</div>
+										</div>
+									</section>
+
+								</div>
+							</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

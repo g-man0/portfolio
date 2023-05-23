@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Traffic Flow Modeling in VISSIM</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">CiSTUP</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic-work.html">Work Experience</a></li>
+							<li><a href="generic-education.html">Education</a></li>
+							<li><a href="generic-projects.html">Projects</a></li>
+						</ul>
+						<a href="#" class="close">Close</a>
+					</div>
+				</nav>
+
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>VISSIM TRAFFIC FLOW MODEL OPTIMIZATION</h2>
+								<p>Optimizing PTV Vissim microscopic traffic flow model through COM interface programming.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<section>
+										<h3 class="major">Problem</h3>
+										<p> VISSIM is a traffic simulation software developed by PTV Group. It is widely used by traffic engineers and transportation planners for modeling and analyzing traffic flow in complex transportation systems, such as urban networks, highways, and public transportation systems. VISSIM allows users to create a virtual model of real-world traffic conditions and simulate different scenarios to evaluate the performance of various traffic management strategies and transportation infrastructure improvements. Therefore, VISSIM can be used to predict the impact of a proposed strategy. To do so, it is important to ensure that the existing simulation is accurate to real-world conditions. This requires optimizing the parameters that govern the simulation.</p>
+									</section>
+
+									<section>
+										<h3 class="major">Global Optimization using Genetic Algorithm</h3>
+										<p> First, identify the most important/sensitive parameters to tune. This is what sensitivity analysis does.</p>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-6"><span class="image center"><img src="images/cistup/sensitivity.png" alt="" /></span></div>
+											</div>
+										</div>
+
+										<p> Genetic Algorithm (GA) is a metaheuristic optimization algorithm that is inspired by the process of natural selection. It is a population-based algorithm that uses principles from genetics and evolution to find optimal solutions to optimization problems. GAs have been used successfully to solve a wide range of global optimization problems, including engineering design, financial modeling, and machine learning. GA can be used for global optimization because it is robust, flexible, and able to explore a large search space. GA is used to optimize the parameters previously selected to match observations from the road network.</p>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-6"><span class="image center"><img src="images/cistup/VISSIM.png" alt="" /></span></div>
+											</div>
+										</div>
+
+										<p> The optimized traffic flow model was used to identify strategies that reduced delay in network. Achieved a decrease in delay by <strong>29.6%</strong> using optimized signal cycle time and a decrease of <strong>20%</strong> using vehicle actuated signals (timing determined by vehicle count at junction). </p>
+
+										<a href="https://doi.org/10.1007/s40890-021-00117-4">Reference: Mohan, R., Eldhose, S. and Manoharan, G. Network-Level Heterogeneous Traffic Flow Modelling in VISSIM. <i>Transportation in Developing Economies 7, 8 (2021).</i></a>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Robotic Rehabilitation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">CiSTUP</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic-work.html">Work Experience</a></li>
+							<li><a href="generic-education.html">Education</a></li>
+							<li><a href="generic-projects.html">Projects</a></li>
+						</ul>
+						<a href="#" class="close">Close</a>
+					</div>
+				</nav>
+
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Bayesian Optimization for Robot-Aided Rehabilitation: Adaptive Variable Impedance Control of a Wearable Ankle Robot</h2>
+								<p>Used Bayesian Optimization and Student-t Process Regression for robust, user-adaptive parameter tuning of an Ankle Robot's Variable Impedance Controller.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<section>
+										<h3> Anklebot Setup and GUI</h3>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-2"><span class="image fit"></span></div>
+												<div class="col-8"><span class="image fit"><img src="images/anklebot/GUI_edit.png" alt="" /></span></div>
+												<div class="col-2"><span class="image fit"></span></div>
+											</div>
+										</div>
+									</section>
+									<section>
+										<h3 class="major">Work</h3>
+										<ul class="just">
+											<li style="margin: 0 0 1em 0">Designed a Variable Impedance Controller that adjusts the impedance parameters based on the user’s kinematic data to provide personalized assistance.</li>
+											<li style="margin: 0 0 1em 0">Bayesian optimization is employed to minimize an objective function formulated from the user’s kinematic data to adapt the impedance parameters per user, thereby enhancing speed and accuracy.</li>
+											<li style="margin: 0 0 1em 0">Employed Bayesian Optimization and Student-t Process Regression for robust Variable Impedance Control design and user-adaptive parameter tuning.</li>
+											<li style="margin: 0 0 1em 0">Gaussian process is used as a surrogate model for optimization to account for uncertainties and outliers inherent to human experiments.</li>
+											<li style="margin: 0 0 1em 0">Student-t process based outlier detection is utilized to enhance optimization robustness and accuracy.</li>
+											<li style="margin: 0 0 1em 0">The efficacy of the optimization is evaluated based on measures of speed, accuracy, and effort, and compared with an untuned variable impedance controller during 2D curved trajectory following tasks.</li>
+											<li style="margin: 0 0 1em 0">The optimized controller was evaluated on 15 healthy subjects and demonstrated an average increase in speed of <strong>9.85%</strong> and a decrease in deviation from the ideal trajectory of <strong>7.57%</strong>, compared to an unoptimized variable impedance controller. The strategy also reduced the time to complete tasks by <strong>6.57%</strong>, while maintaining a similar level of user effort.</li>
+										</ul>
+									</section>
+
+									<section>
+										<h3 class="major">Videos and Images</h3>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-12"><span class="image fit"><img src="images/anklebot/SampleTrialandModNew.png" alt="" /></span></div>
+												<div class="col-12"><h3>Representative Result. Optimization models across iterations:</h3></div>
+												<div class="col-12"><span class="image fit"><video width="1280" height="720" controls>
+													<source src="images/anklebot/BO_models_fixed.mp4" type="video/mp4">
+												</video></span></div>
+												<div class="col-12"><h3>Stiffness modulation in Practice:</h3></div>
+												<div class="col-12"><span class="image fit"><video width="1280" height="720" controls>
+													<source src="images/anklebot/animation_single_quiver_tailpivot_projFIX.mp4" type="video/mp4">
+												</video></span></div>
+
+												<!-- <div class="col-2"><span class="image fit"></span></div>
+												<div class="col-8"><span class="image fit"><img src="images/anklebot/Group-results.png" alt="" /></span></div>
+												<div class="col-2"><span class="image fit"></span></div> -->
+
+												<div class="col-6"><span class="image fit"><img src="images/anklebot/Direct_params.png" alt="" /></span></div>
+												<div class="col-6"><span class="image fit"><img src="images/anklebot/Indirect_params.png" alt="" /></span></div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
